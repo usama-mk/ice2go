@@ -61,14 +61,14 @@ document.querySelectorAll(".animate-fade-up").forEach((el) => {
   observer.observe(el);
 });
 
-// Parallax effect for hero background
-window.addEventListener("scroll", () => {
-  const scrolled = window.pageYOffset;
-  const heroBackground = document.querySelector(".hero-background");
-  if (heroBackground) {
-    heroBackground.style.transform = `translateY(${scrolled * 0.5}px)`;
-  }
-});
+// Parallax effect for hero background (disabled for smoother section snapping)
+// window.addEventListener("scroll", () => {
+//   const scrolled = window.pageYOffset;
+//   const heroBackground = document.querySelector(".hero-background");
+//   if (heroBackground) {
+//     heroBackground.style.transform = `translateY(${scrolled * 0.5}px)`;
+//   }
+// });
 
 // Add floating animation to benefit cards
 document.querySelectorAll(".benefit-card").forEach((card, index) => {

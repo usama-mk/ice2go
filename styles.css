@@ -113,7 +113,7 @@ body {
 .hero {
   min-height: calc(100vh - 70px);
   padding-top: 70px;
-  padding-bottom: 40px;
+  padding-bottom: 64px;
   position: relative;
   display: flex;
   align-items: center;
@@ -463,9 +463,9 @@ body {
 }
 
 /* Services Section */
+/* ensure services begins cleanly below hero without overlay */
 .services-section {
-  padding: 100px 0;
-  background: #f8fafc;
+  position: relative;
 }
 
 /* Why ICE2GO */
@@ -1098,6 +1098,17 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* Anchor offsets for fixed navbar */
+#services {
+  scroll-margin-top: 90px;
+}
+#how-it-works {
+  scroll-margin-top: 90px;
+}
+#contact {
+  scroll-margin-top: 90px;
 }
 
 @keyframes bounce {
